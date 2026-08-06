@@ -104,7 +104,9 @@ const tarjetasYoutube = document.querySelectorAll('.yt-card');
 
 botonesFiltro.forEach(boton => {
     boton.addEventListener('click', () => {
-        botonesFiltro.forEach(b => b.classList.remove('activo'));
+        botonesFiltro.forEach(b =>
+
+b.classList.remove('activo'));
         boton.classList.add('activo');
         
         const cat = boton.getAttribute('data-filtro');
@@ -207,7 +209,8 @@ if (formContacto) {
         formContacto.reset();
 
         setTimeout(() => {
-            popupMensaje.classList.remove('popup-activo');
+
+popupMensaje.classList.remove('popup-activo');
             popupMensaje.classList.add('popup-oculto');
         }, 3500);
     });
